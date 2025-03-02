@@ -17,7 +17,7 @@ const Home = () => {
   };
 
   const joinRoom = () => {
-    if (!roomId || !username) {
+    if (!roomId.trim() || !username.trim()) {
       toast.error("ROOM ID & username is required");
       return;
     }
